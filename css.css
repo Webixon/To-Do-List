@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stint Ultra Condensed', cursive;
+    background: linear-gradient(180deg, white, rgb(92, 92, 92) );
+    height: 100vh;
+}
+
+div.title {
+    display: block;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+div.author{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+div.grab{
+    position: fixed;
+    left: calc(50vw + 80px);
+    top:320px;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;    
+}
+
+div.bar {    
+    height: 100px;
+    background: linear-gradient(180deg, rgb(92, 92, 92), white);
+    box-shadow: 2px 5px 16px 13px rgba(38, 38, 38, 0.66);
+}
+
+div.newTask , div.newTaskCompleted{
+    display: block ;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    left:50vw;
+    top:300px;
+    padding: 0px 10px 10px 10px;
+    font-size: 24px;
+    overflow-wrap: break-word;
+    border-radius: 3%;
+    border: black 1px solid;
+    transform: translateX(-75px)
+}
+
+div.newTaskCompleted{
+    opacity: 60%;
+    text-decoration: line-through;
+}
+
+div.modifyTask{
+    position: absolute;
+    display: none;
+    bottom: 30px;
+    width: 100%;
+    height: 100px;
+    background: black;
+    opacity: 70%;
+    box-shadow: 2px 5px 16px 13px rgba(38, 38, 38, 0.66);
+}
+
+div.modifyTaskDisplay{
+    display: flex;
+    justify-content: center;
+    
+}
+
+span.input{
+    display: flex;
+    position: relative;
+    transform: translateY(65%);
+    height:40px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input.inputField, input.inputMod{
+    border-radius: 5px;
+    background-color: lightgray;
+    margin-right: 10px;
+    width: 200px;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 24px;
+}
+
+input.inputMod{
+    height: 50px;
+    margin-top: 1.5rem;
+    margin-right: 20px;
+}
+
+input.inputField::placeholder{
+    color:gray
+}
+
+button.inputBtn, button.inputBtnMod, button.inputBtnCancel{
+    border-radius: 5px;
+    padding:5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button.inputBtnMod, button.inputBtnCancel{
+    height: 50px;
+    margin-top: 1.5rem;
+    margin-right: 5px;
+}
+
+button.inputBtn:hover{
+    background-color: black;
+    color:white;
+    transition: background-color 0.2s, color 0.5s;
+}
+
+button.inputBtn {
+    background-color: transparent;
+    font-family: 'Stint Ultra Condensed', cursive;
+    border-style: groove;
+
+}
+
+span.error{
+    position: relative;
+    top:35px;
+    left: 45vw;
+    color: red;    
+}
+
+button.divBtnCompleted, button.divBtnMod, button.divBtnDel{
+    position: relative;
+    margin-right: 9px;
+    margin-left: 11px;
+    font-size: 14px;    
+    background-color: transparent;
+    border: black 1px solid;
+    border-radius: 25%;    
+}
+
+button.divBtnCompleted:hover, button.divBtnMod:hover, button.divBtnDel:hover{
+    color:white;
+    background-color: black;
+    border: black 1px solid;
+    transition: 0.2s ease-in-out;
+}

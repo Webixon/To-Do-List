@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav but/css/fontello.css" type="text/css">
+
+
+</head>
+<body>
+    <div class ="title">To Do List
+        <div class = "author">by Tomasz Sośniewski - 2021</div>
+    </div>
+
+    <div class ="bar">
+        <span class="input">
+            <input type="text" class = "inputField" placeholder="Wpisz zadanie do wykonania">
+            <button class = "inputBtn" >Wprowadź zadanie</button>
+        </span>
+        <span class = "error"></span>
+    </div>
+
+    <div class ="content"></div>
+    
+    <div class = "grab"> Grab me...</div>
+
+    <div class ="modifyTask" id = "modCheck">
+         <input type="text" class="inputMod" placeholder="Wpisz modyfikację zadania">
+          <button class="inputBtnMod">Zatwierdź</button>
+          <button class="inputBtnCancel">Anuluj</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
